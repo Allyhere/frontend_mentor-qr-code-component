@@ -1,0 +1,67 @@
+*,
+*:is(::before, ::after) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --d-radius: 12px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(212, 45%, 89%);
+  font-family: "Outfit", sans-serif;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 320px;
+  display: grid;
+  justify-items: center;
+  row-gap: 2ch;
+  padding: 1.5ch 1.5ch 4ch;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: var(--d-radius);
+  text-align: center;
+  box-shadow: 0px 20px 40px 12px rgba(0, 0, 0, 5%);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 280px;
+  border-radius: var(--d-radius);
+}
+
+h1 {
+  color: hsl(218, 44%, 22%);
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+p {
+  max-width: 24ch;
+  color: hsl(220, 15%, 55%);
+  font-size: 0.95rem;
+}
+
+footer {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  color: hsl(216deg, 95%, 58%);
+}
